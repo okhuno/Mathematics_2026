@@ -39,5 +39,3 @@ Denote the columns of $`B`$ by $`b_1,b_2`$.
 **Why:** the entry in row $`i`$, column $`j`$ of $`AB`$ uses row $`i`$ of $`A`$ and **only column $`j`$ of $`B`$**. That is exactly the $`i`$-th entry of $`Ab_j`$. So column $`j`$ of $`AB`$ is $`Ab_j`$: multiplying by $`A`$ acts on each column of $`B`$ separately.
 
 ---
-
-## More Challenging Exercises
