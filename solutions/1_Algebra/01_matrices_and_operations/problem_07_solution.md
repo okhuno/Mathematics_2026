@@ -21,21 +21,37 @@ Explain the roles of the matrices $I$ and $0$, and describe the pattern you obse
 
 #### Answer
 
-- $AI=IA=A+0=A=\begin{pmatrix}2&1\\0&2\end{pmatrix}$
-
-- $A^2=\begin{pmatrix}4&4\\0&4\end{pmatrix}$
-
-- $A^3=\begin{pmatrix}8&12\\0&8\end{pmatrix}$
-
-- **Pattern:**
+- $AI=IA=A+0=A$
 
   $$
-  A^n=
+  A=
   \begin{pmatrix}
-  2^n & n\cdot 2^{n-1} \\
-  0 & 2^n \\
+  2 & 1 \\
+  0 & 2
   \end{pmatrix}
   $$
+
+- $A^2$
+
+  $$
+  A^2=
+  \begin{pmatrix}
+  4 & 4 \\
+  0 & 4
+  \end{pmatrix}
+  $$
+
+- $A^3$
+
+  $$
+  A^3=
+  \begin{pmatrix}
+  8 & 12 \\
+  0 & 8
+  \end{pmatrix}
+  $$
+
+  
 #### How I solved it
 - **$AI$ and $IA$:** multiplying by the identity leaves the matrix unchanged. **$A+0$:** adding the zero matrix leaves it unchanged.
 - **$A^2=A\cdot A$:**
