@@ -20,10 +20,22 @@ Explain the roles of the matrices $I$ and $0$, and describe the pattern you obse
 > **Why this exercise:** organizes the roles of neutral elements and reveals regularity in successive powers of a matrix.
 
 #### Answer
-- $AI=IA=A+0=A=\begin{pmatrix}2&1\\0&2\end{pmatrix}$
-- $A^2=\begin{pmatrix}4&4\\0&4\end{pmatrix}$, $\quad A^3=\begin{pmatrix}8&12\\0&8\end{pmatrix}$
-- Pattern: $A^n=\begin{pmatrix}2^n&n\cdot2^{n-1}\\0&2^n\end{pmatrix}$.
 
+- $AI=IA=A+0=A=\begin{pmatrix}2&1\\0&2\end{pmatrix}$
+
+- $A^2=\begin{pmatrix}4&4\\0&4\end{pmatrix}$
+
+- $A^3=\begin{pmatrix}8&12\\0&8\end{pmatrix}$
+
+- **Pattern:**
+
+  $$
+  A^n=
+  \begin{pmatrix}
+  2^n & n\cdot 2^{n-1} \\
+  0 & 2^n \\
+  \end{pmatrix}
+  $$
 #### How I solved it
 - **$AI$ and $IA$:** multiplying by the identity leaves the matrix unchanged. **$A+0$:** adding the zero matrix leaves it unchanged.
 - **$A^2=A\cdot A$:**
