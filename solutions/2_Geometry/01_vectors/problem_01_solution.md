@@ -1,17 +1,28 @@
-## Question
+### Exercise 1. Vector Operations and Their Meaning
+For $`u=(2,-1,3)`$ and $`v=(-1,4,2)`$ compute
 
-For $u=(2,-1,3)$ and $v=(-1,4,2)$, compute $u+v$, $u-v$, and $3u-2v$; verify $(u+v)-v=u$ and explain vector addition geometrically.
+```math
+u+v,\qquad u-v,\qquad 3u-2v.
+```
 
-## Solution
+Then verify that $`(u+v)-v=u`$, and explain geometrically what adding two vectors means.
 
-Vector operations are performed coordinate by coordinate:
+> **Why this exercise:** reinforces basic operations and immediately connects them with their geometric meaning.
 
-$$u+v=(1,3,5),\qquad u-v=(3,-5,1),$$
+#### Answer
+- $`u+v=(1,3,5)`$
+- $`u-v=(3,-5,1)`$
+- $`3u-2v=(8,-11,5)`$
+- $`(u+v)-v=(2,-1,3)=u`$ ✓
 
-$$3u-2v=(6,-3,9)-(-2,8,4)=(8,-11,5).$$
+#### How I solved it
+**Idea:** work on each position separately: first numbers with first numbers, and so on.
 
-The requested check gives
+- $`u+v=(2+(-1),\ -1+4,\ 3+2)=(1,3,5)`$
+- $`u-v=(2-(-1),\ -1-4,\ 3-2)=(3,-5,1)`$
+- For $`3u-2v`$, first multiply: $`3u=(6,-3,9)`$ and $`2v=(-2,8,4)`$. Then subtract: $`(6+2,\ -3-8,\ 9-4)=(8,-11,5)`$.
+- Check: $`(1,3,5)-(-1,4,2)=(2,-1,3)`$, which is $`u`$. We added $`v`$ and took it away again, so we are back at the start.
 
-$$(u+v)-v=(1,3,5)-(-1,4,2)=(2,-1,3)=u.$$
+**Geometric meaning of addition:** draw $`u`$. From the tip of $`u`$, draw $`v`$. The arrow from the start of $`u`$ to the tip of $`v`$ is $`u+v`$. It is like walking: first along $`u`$, then along $`v`$. The sum is the straight path from where you began to where you ended.
 
-Geometrically, adding vectors means placing the tail of the second vector at the head of the first; the sum is the displacement from the original tail to the final head (equivalently, the diagonal of the parallelogram).
+---
