@@ -1,19 +1,22 @@
-## Question
+### Exercise 2. Distance as the Length of a Vector
+The points are $`A=(1,2,3)`$ and $`B=(4,-2,6)`$.
 
-For $A=(1,2,3)$ and $B=(4,-2,6)$, construct $\overrightarrow{AB}$, compute its length and the point distance, and explain why the results agree.
+1. Construct $`\overrightarrow{AB}`$.
+2. Compute its length.
+3. Compute the distance between the points using the coordinate formula.
+4. Explain why both calculations give the same result.
 
-## Solution
+> **Why this exercise:** shows that the point-distance formula comes directly from the length of a difference vector.
 
-The displacement from $A$ to $B$ is
+#### Answer
+- $`\overrightarrow{AB}=(3,-4,3)`$
+- Length $`=\sqrt{34}\approx5.83`$
+- Distance $`=\sqrt{34}`$ (same value)
 
-$$\overrightarrow{AB}=B-A=(3,-4,3).$$
+#### How I solved it
+1. **Build the vector:** end minus start, so $`B-A=(4-1,\ -2-2,\ 6-3)=(3,-4,3)`$.
+2. **Length:** square each number, add, square root: $`\sqrt{9+16+9}=\sqrt{34}`$.
+3. **Distance formula:** $`\sqrt{(4-1)^2+(-2-2)^2+(6-3)^2}=\sqrt{9+16+9}=\sqrt{34}`$.
+4. **Why the same:** the numbers inside the square root in step 3 are $`(4-1)`$, $`(-2-2)`$, $`(6-3)`$. Those are exactly the three numbers of $`\overrightarrow{AB}`$. So the distance formula is just the length formula applied to the arrow from $`A`$ to $`B`$. The distance between two points is the length of the arrow connecting them.
 
-Its length is
-
-$$\|\overrightarrow{AB}\|=\sqrt{3^2+(-4)^2+3^2}=\sqrt{34}.$$
-
-The coordinate distance formula independently gives
-
-$$d(A,B)=\sqrt{(4-1)^2+(-2-2)^2+(6-3)^2}=\sqrt{34}.$$
-
-These agree because Euclidean distance is defined as the length of the displacement vector joining the two points.
+---
