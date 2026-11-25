@@ -48,58 +48,93 @@ SRx=
 \end{pmatrix}.
 $$
 
+
 The results are different.
 
-How I solved it
+#### How I solved it
 
-1. $RSx$ (first $S$, then $R$)
+**1. RSx (first S, then R)**
 
-First, apply the scaling transformation:
+First, apply the scaling transformation.
 
+$$
+Sx =
 \begin{pmatrix}
-2 \
+2 \cdot 1 \\
+1 \cdot 2
+\end{pmatrix}
+=
+\begin{pmatrix}
+2 \\
 2
 \end{pmatrix}
 $$
 
-Then, apply the rotation:
+Then, apply the rotation.
 
+$$
+R
 \begin{pmatrix}
--2 \
+2 \\
+2
+\end{pmatrix}
+=
+\begin{pmatrix}
+0 \cdot 2 - 1 \cdot 2 \\
+1 \cdot 2 + 0 \cdot 2
+\end{pmatrix}
+=
+\begin{pmatrix}
+-2 \\
 2
 \end{pmatrix}
 $$
 
-2. $SRx$ (first $R$, then $S$)
+**2. SRx (first R, then S)**
 
-First, apply the rotation:
+First, apply the rotation.
 
+$$
+Rx =
 \begin{pmatrix}
--2 \
+0 \cdot 1 - 1 \cdot 2 \\
+1 \cdot 1 + 0 \cdot 2
+\end{pmatrix}
+=
+\begin{pmatrix}
+-2 \\
 1
 \end{pmatrix}
 $$
 
-Then, apply the scaling transformation:
+Then, apply the scaling transformation.
 
+$$
+S
 \begin{pmatrix}
--4 \
+-2 \\
+1
+\end{pmatrix}
+=
+\begin{pmatrix}
+-4 \\
 1
 \end{pmatrix}
 $$
 
-In $RSx$, the matrix closest to $x$ acts first.
+In RSx, the matrix closest to x acts first.
 
-Geometric reason:
+**Geometric reason:**
 
-The transformation $S$ stretches vectors horizontally while leaving their vertical components unchanged.
+The transformation S stretches vectors horizontally while leaving their vertical components unchanged.
 
-If scaling is performed first, the vector is stretched along the original $x$-axis and then rotated.
+- If scaling is performed first, the vector is stretched along the original x-axis and then rotated.
+- If rotation is performed first, the vector is rotated and then stretched horizontally in its new position.
 
-If rotation is performed first, the vector is rotated and then stretched horizontally in its new position.
-
-Consequently, the two compositions produce different vectors. Matrix multiplication is therefore not commutative in general:
+Consequently, the two compositions produce different vectors. Matrix multiplication is therefore not commutative in general.
 
 $$
-RS\neq SR
+RS \neq SR
 $$
+
+---
