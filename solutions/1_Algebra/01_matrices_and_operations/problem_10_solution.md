@@ -22,15 +22,83 @@ Denote the columns of $B$ by $b_1,b_2$.
 
 > **Why this exercise:** extends the interpretation of matrix-vector multiplication to a full product of two matrices instead of simply repeating another $Ax$ exercise.
 
-#### Answer
-1. $Ab_1=\begin{pmatrix}-1\\2\end{pmatrix}$, $\ Ab_2=\begin{pmatrix}2\\1\end{pmatrix}$.
-2. $AB=\begin{pmatrix}-1&2\\2&1\end{pmatrix}$.
-3. The columns of $AB$ are exactly $Ab_1$ and $Ab_2$.
+1. 
+
+$$
+Ab_1=
+\begin{pmatrix}
+-1 \\
+2
+\end{pmatrix},
+\qquad
+Ab_2=
+\begin{pmatrix}
+2 \\
+1
+\end{pmatrix}.
+$$
+
+2.
+
+$$
+AB=
+\begin{pmatrix}
+-1 & 2 \\
+2 & 1
+\end{pmatrix}.
+$$
+
+3. The columns of `AB` are exactly `Ab1` and `Ab2`.
 
 #### How I solved it
-1. $b_1=(1,-1,3)^T$ and $b_2=(2,0,1)^T$.
-   - $Ab_1=\begin{pmatrix}1\cdot1+2\cdot(-1)+0\cdot3\\0\cdot1+1\cdot(-1)+1\cdot3\end{pmatrix}=\begin{pmatrix}-1\\2\end{pmatrix}$
-   - $Ab_2=\begin{pmatrix}1\cdot2+2\cdot0+0\cdot1\\0\cdot2+1\cdot0+1\cdot1\end{pmatrix}=\begin{pmatrix}2\\1\end{pmatrix}$
+
+1. The vectors are
+
+   $$
+   b_1=
+   \begin{pmatrix}
+   1 \\
+   -1 \\
+   3
+   \end{pmatrix},
+   \qquad
+   b_2=
+   \begin{pmatrix}
+   2 \\
+   0 \\
+   1
+   \end{pmatrix}.
+   $$
+
+   - **Calculating $Ab_1$:**
+
+     $$
+     Ab_1=
+     \begin{pmatrix}
+     1\cdot1+2\cdot(-1)+0\cdot3 \\
+     0\cdot1+1\cdot(-1)+1\cdot3
+     \end{pmatrix}
+     =
+     \begin{pmatrix}
+     -1 \\
+     2
+     \end{pmatrix}
+     $$
+
+   - **Calculating $Ab_2$:**
+
+     $$
+     Ab_2=
+     \begin{pmatrix}
+     1\cdot2+2\cdot0+0\cdot1 \\
+     0\cdot2+1\cdot0+1\cdot1
+     \end{pmatrix}
+     =
+     \begin{pmatrix}
+     2 \\
+     1
+     \end{pmatrix}
+     $$
 2. $AB$ ($2\times3$ times $3\times2$ gives $2\times2$) entry by entry:
    - $(1,1)$: $1-2+0=-1$; $(1,2)$: $2+0+0=2$
    - $(2,1)$: $0-1+3=2$; $(2,2)$: $0+0+1=1$
