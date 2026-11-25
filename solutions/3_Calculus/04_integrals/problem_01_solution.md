@@ -1,19 +1,26 @@
-## Question
+### Problem 1. Antiderivative and Verification
+For
 
-For $f(x)=3x^2-4x+5$, find one antiderivative and the entire family, verify it by differentiation, and explain the constant $C$.
+```math
+f(x)=3x^2-4x+5
+```
 
-## Solution
+find one antiderivative $`F(x)`$. Write the entire family of antiderivatives, verify the result by differentiation, and explain the meaning of the constant $`C`$.
 
-Integrating term by term with the power rule gives
+> **Why this problem:** it introduces integration as the inverse operation to differentiation.
 
-$$F(x)=x^3-2x^2+5x$$
+#### Answer
+- One antiderivative: $`F(x)=x^3-2x^2+5x`$.
+- Family: $`x^3-2x^2+5x+C`$.
 
-as one antiderivative. The full family is
+#### How I solved it
+Integrate term by term with the power rule:
+- $`\int3x^2dx=3\cdot\frac{x^3}3=x^3`$
+- $`\int-4x\,dx=-4\cdot\frac{x^2}{2}=-2x^2`$
+- $`\int5\,dx=5x`$
 
-$$F(x)=x^3-2x^2+5x+C,\qquad C\in\mathbb R.$$
+**Verify:** $`(x^3-2x^2+5x+C)'=3x^2-4x+5+0`$ ✓
 
-Differentiation verifies the result:
+**Meaning of $`C`$:** the derivative of a constant is $`0`$, so adding any constant does not change the derivative. All antiderivatives differ only by a constant: their graphs are copies of each other shifted up or down.
 
-$$F'(x)=3x^2-4x+5=f(x).$$
-
-The constant appears because every constant has derivative zero. Thus any two antiderivatives of the same function on an interval differ by a constant.
+---
