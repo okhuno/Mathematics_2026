@@ -1,19 +1,27 @@
-## Question
+### Exercise 6. Projection and Perpendicular Component
+Find the projection of $`u=(4,2)`$ onto the direction $`v=(1,1)`$. Then compute
 
-Project $u=(4,2)$ onto $v=(1,1)$, compute the residual $r$, verify $r\cdot v=0$, and explain the result geometrically.
+```math
+r=u-\mathrm{proj}_v\,u
+```
 
-## Solution
+and verify that $`r\cdot v=0`$. Explain this result geometrically.
 
-Using the projection formula,
+> **Why this exercise:** shows projection as a decomposition into parallel and perpendicular components.
 
-$$\operatorname{proj}_v u=\frac{u\cdot v}{v\cdot v}v=\frac{6}{2}(1,1)=(3,3).$$
+#### Answer
+- $`\mathrm{proj}_v u=(3,3)`$
+- $`r=(1,-1)`$
+- $`r\cdot v=0`$ ✓
 
-Thus
+#### How I solved it
+**Idea:** the projection is the "shadow" of $`u`$ on the line that goes in the direction of $`v`$.
 
-$$r=u-\operatorname{proj}_v u=(4,2)-(3,3)=(1,-1),$$
+1. **Dot products:** $`u\cdot v=4\cdot1+2\cdot1=6`$ and $`v\cdot v=1+1=2`$.
+2. **Projection:** $`\dfrac{6}{2}(1,1)=3(1,1)=(3,3)`$.
+3. **Leftover:** $`r=(4,2)-(3,3)=(1,-1)`$.
+4. **Check:** $`r\cdot v=1\cdot1+(-1)\cdot1=0`$ ✓
 
-and the requested calculation is
+**Geometric meaning:** we split $`u`$ into two pieces. One piece, $`(3,3)`$, lies along $`v`$. The other, $`r=(1,-1)`$, sticks out at exactly $`90^\circ`$ from $`v`$. Together they rebuild $`u`$: $`(3,3)+(1,-1)=(4,2)`$.
 
-$$r\cdot v=(1,-1)\cdot(1,1)=1-1=0.$$
-
-The projection $(3,3)$ is parallel to $v$, so it is the component of $u$ in the projection direction. Subtracting this parallel component leaves the perpendicular component $r$. The zero dot product verifies geometrically that $r$ is perpendicular to the direction $v$.
+---
